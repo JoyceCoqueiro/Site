@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block titulo %}Login{% endblock titulo %}
+
+{% block conteudo %}
+
+<section class="section_conteudo">
+
+    <br/><br/><br/><br/><br/>
+
+    <form class="form form_login" method="POST">
+
+        <h1 class="titulo_login_cadastro">Login</h1>
+
+        {{ form.csrf_token }}
+        {{ form.email.label }} <br/>
+        {{ form.email(class="input input_login") }} <br/><br/><br/>
+        {{ form.senha.label }} <br/>
+        {{ form.senha(class="input input_login") }} <br/><br/><br/> 
+        {{ form.botao(class="btn btn_login") }}
+    </form>
+    
+    <p>Caso não tenha uma conta clique <a href="/cadastro">aqui</a></p>
+
+    <br/><br/><br/><br/>
+
+</section>
+
+{% endblock conteudo %}

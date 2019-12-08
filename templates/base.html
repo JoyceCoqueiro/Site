@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+    <link rel="stylesheet" href="{{url_for('static', filename='_css/style.css')}}" />
+
+    <title>Question? - {% block titulo %}{% endblock titulo %}</title>
+</head>
+<body>
+
+    <header>
+
+        <a class="link_login" href="/login"><div class="nav">
+            Login
+        </div></a>
+
+        <div class="nome_site">
+            <h1 class="titulo"><a href="/" class="titulo">Question ?</a></h1>
+            <p class="slogan">Sanando suas dúvidas</p>
+        </div>
+            
+    </header>
+
+    {% block conteudo %}
+    {% endblock conteudo %}
+    
+</body>
+</html>

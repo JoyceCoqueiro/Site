@@ -1,0 +1,29 @@
+{% extends 'base.html' %}
+
+{% block titulo %}Cadastro{% endblock titulo %}
+
+{% block conteudo %}
+<section class="section_conteudo">
+
+    <br/><br/><br/><br/><br/><br/><br/><br/>
+
+    <form class="form form_cadastro" method="POST">
+
+        <h1 class="titulo_login_cadastro">Cadastro</h1>
+
+        {{ form.csrf_token }}
+        {{ form.nome.label }} <br/>
+        {{ form.nome(class="input input_cadastro") }} <br/><br/><br/>
+        {{ form.email.label }} <br/>
+        {{ form.email(class="input input_cadastro") }} <br/><br/><br/>
+        {{ form.senha.label }} <br/>
+        {{ form.senha(class="input input_cadastro") }} <br/><br/><br/>
+        {{ form.botao(class="btn btn_cadastro") }}
+
+    </form>
+    
+    <br/><br/>
+
+</section>
+
+{% endblock conteudo %}
