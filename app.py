@@ -3,8 +3,8 @@ from flask_sqlalchemy import SQLAlchemy
 from formularios import CadastroForm, LoginForm
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'SHHHHHHHHHH!'
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///DancoDeDados.db'
+app.config['SECRET_KEY'] = 'SHHHHHHHHHHH!'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///BancoDeDados.db'
 db = SQLAlchemy(app)
 
 class User(db.Model):
