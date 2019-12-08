@@ -1,0 +1,109 @@
+header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 20%;
+    background-color: #0c898d;
+    color: #ffffff;
+    font-family: Nunito-Regular;
+}
+
+@font-face {
+    font-family: Nunito-Regular;
+    src: url('Nunito-Regular.ttf');
+}
+
+.nav {
+    position: absolute;
+    top: 7.5%;
+    right: 5%;
+    background-color: #fff;
+    padding: 15px;
+    padding-left: 40px;
+    padding-right: 40px;
+    border-radius: 10px;
+    transition-duration: 0.25s;
+}
+
+.nav:hover {
+    border-radius: 0;
+    transition-duration: 0.25s;
+}
+
+.link_login {
+    color: #0c898d;
+    text-decoration: none;
+    font-size: 20px;
+    transition-duration: 0.25s;
+}
+
+.link_login:hover {
+    color: #075b5e;
+    transition-duration: 0.25s;
+}
+
+.titulo {
+    font-size: 120px;
+    border-bottom: 3px solid #fff;
+    text-decoration: none;
+    color: #fff;
+}
+
+.nome_site {
+    position: absolute;
+    transform: translate(-50%, -50%);
+    top: 45%;
+    left: 25%;
+}
+
+.slogan {
+    margin-top: -70px;
+    font-size: 25px;
+}
+
+.section_conteudo {
+    position: absolute;
+    top: 120%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+.section_conteudo {
+    font-family: Nunito-Regular;
+    text-align: center;
+}
+
+.titulo_sobre {
+    border-bottom: 1px #000 solid;
+    padding: 20px;
+}
+
+.form {
+    border: 3px solid #aaa;
+    padding: 20px;
+    border-radius: 10px;
+    padding-bottom: 40px;
+    padding-top: 40px;
+}
+
+.titulo_login_cadastro {
+    border-bottom: 1px solid #000;
+}
+
+.input {
+    padding: 15px;
+    padding-left: 60px;
+    padding-right: 60px;
+    border: 3px solid #0c898d;
+    border-radius: 50px;
+    text-align: center;
+}
+
+.btn {
+    padding: 15px;
+    padding-left: 60px;
+    padding-right: 60px;
+    background: #0c898d;
+    border: none;
+}
